@@ -1,0 +1,46 @@
+[versions]
+agp = "9.4.1"
+
+kotlin = "2.4.21"
+androidx-core = "1.19.1"
+lifecycleRuntimeKtx = "2.11.0"
+activityCompose = "1.13.0"
+material = "1.14.0"
+material3 = "1.5.0-beta02"
+ui = "1.12.1"
+appcompat = "1.8.0"
+
+espressoCoreVersion = "3.7.0"
+material3WindowSizeClass = "1.4.0"
+
+uiTooling = "1.12.1"
+
+# https://github.com/vanniktech/gradle-maven-publish-plugin
+vanniktech-maven = "0.37.0"
+
+[libraries]
+androidx-compose-animation = { module = "androidx.compose.animation:animation", version.ref = "ui" }
+androidx-compose-material3-window-size-class1 = { module = "androidx.compose.material3:material3-window-size-class", version.ref = "material3WindowSizeClass" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "uiTooling" }
+androidx-core = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
+
+androidx-material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+# Dependencies of the build-logic (convention plugins) itself. Referenced from build-logic/build.gradle.kts.
+android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+android-gradle-api = { module = "com.android.tools.build:gradle-api", version.ref = "agp" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-gradle-plugin-api = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin-api", version.ref = "kotlin" }
+
+
+[plugins]
+shared-library = { id = "shared.library" }
+shared-compose = { id = "shared.compose" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+vanniktech-maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktech-maven" }

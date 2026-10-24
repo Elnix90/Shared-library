@@ -1,0 +1,16 @@
+package io.github.elnix90.shared.ui.dragon.text
+
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+
+@Composable
+public fun LabelText(text: String, modifier: Modifier = Modifier) {
+	Text(
+		modifier = modifier,
+		text = text,
+		style = MaterialTheme.typography.titleLarge,
+		color = MaterialTheme.colorScheme.primary
+	)
+}

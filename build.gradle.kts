@@ -5,8 +5,8 @@ plugins {
 }
 
 allprojects {
-	group = "io.github.elnix90.lock"
-	version = "1.3.0"
+	group = "io.github.elnix90.shared"
+	version = "1.0.0"
 }
 
 subprojects {
@@ -23,13 +23,13 @@ subprojects {
 				name.set(project.name)
 
 				description.set(
-					"Compose Lock library"
+					"Shared UI library"
 				)
 
 				inceptionYear.set("2026")
 
 				url.set(
-					"https://github.com/Elnix90/compose-lock"
+					"https://github.com/Elnix90/Shared-library"
 				)
 
 				licenses {
@@ -50,15 +50,15 @@ subprojects {
 
 				scm {
 					url.set(
-						"https://github.com/Elnix90/compose-lock"
+						"https://github.com/Elnix90/Shared-library"
 					)
 
 					connection.set(
-						"scm:git:https://github.com/Elnix90/compose-lock.git"
+						"scm:git:https://github.com/Elnix90/Shared-library.git"
 					)
 
 					developerConnection.set(
-						"scm:git:ssh://git@github.com/github/compose-lock.git"
+						"scm:git:ssh://git@github.com/Elnix90/Shared-library.git"
 					)
 				}
 			}

@@ -45,7 +45,6 @@ dependencies {
 	androidTestImplementation(libs.androidx.compose.ui.test)
 	androidTestImplementation(libs.junit)
 	androidTestImplementation(libs.androidx.test.ext.junit)
-	androidTestImplementation(libs.androidx.activity)
 
 	debugRuntimeOnly(libs.androidx.compose.ui.test.manifest)
 }

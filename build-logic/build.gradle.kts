@@ -6,10 +6,11 @@ plugins {
 group = "io.github.elnix90.shared.buildlogic"
 
 dependencies {
-	compileOnly(libs.android.gradle.plugin)
 	compileOnly(libs.android.gradle.api)
-	compileOnly(libs.kotlin.gradle.plugin.api)
+	compileOnly(libs.android.gradle.plugin)
 	compileOnly(libs.kotlin.gradle.plugin)
+	compileOnly(libs.kotlin.gradle.plugin.api)
+	implementation(libs.dependency.analysis.plugin)
 }
 
 gradlePlugin {

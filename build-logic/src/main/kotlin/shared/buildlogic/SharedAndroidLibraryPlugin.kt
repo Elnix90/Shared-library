@@ -10,6 +10,7 @@ class SharedAndroidLibraryPlugin : Plugin<Project> {
 		with(target) {
 			pluginManager.apply("com.android.library")
 			pluginManager.apply("com.vanniktech.maven.publish")
+			pluginManager.apply("com.autonomousapps.dependency-analysis")
 
 			configureKotlinAndroid()
 

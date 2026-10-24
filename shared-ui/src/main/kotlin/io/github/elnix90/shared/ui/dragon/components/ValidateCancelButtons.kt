@@ -25,8 +25,8 @@ import io.github.elnix90.shared.ui.dragon.text.AutoResizeableText
 
 @Composable
 public fun ValidateCancelButtons(
-	confirmText: String = "Save",
-	cancelText: String = "Cancel",
+	confirmText: String,
+	cancelText: String,
 	validateEnabled: Boolean = true,
 	onCancel: (() -> Unit)? = null,
 	onConfirm: () -> Unit
@@ -98,8 +98,8 @@ public fun ValidateCancelButtons(
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
 @Composable
 public fun ValidateCancelButtonsWithLoading(
-	confirmText: String = "Save",
-	cancelText: String = "Cancel",
+	confirmText: String,
+	cancelText: String,
 	validateEnabled: Boolean = true,
 	onCancel: (() -> Unit)? = null,
 	hasClickedValidate: Boolean,

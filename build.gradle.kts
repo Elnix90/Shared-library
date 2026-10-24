@@ -6,7 +6,7 @@ plugins {
 
 allprojects {
 	group = "io.github.elnix90.shared"
-	version = "1.0.0"
+	version = "1.0.1"
 }
 
 subprojects {
